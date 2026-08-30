@@ -1,9 +1,14 @@
-import Componente from './componente'
+import FormularioAutomovel from './components/FormularioAutomovel/FormularioAutomovel'
 import './App.css'
 
 function App() {
   return(
-   <Componente/>
+    <div>
+       <h1>AutoCatalog</h1>
+      <FormularioAutomovel/>
+    </div>
+  
+
   )
   
 }
