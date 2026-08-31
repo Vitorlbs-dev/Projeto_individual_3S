@@ -1,0 +1,24 @@
+.lista {
+    width: 700px;
+    margin: 40px auto;
+}
+
+.lista h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px 0;
+}

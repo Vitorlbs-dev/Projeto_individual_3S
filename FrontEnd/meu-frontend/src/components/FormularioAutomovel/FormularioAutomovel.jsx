@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./FormularioAutomovel.module.css";
 
-function FormularioAutomovel(){
+function FormularioAutomovel({atualizarLista}){
 
     const [carregando, setCarregando] = useState(false);
     const [mensagem, setMensagem] = useState("");
@@ -47,13 +47,14 @@ function FormularioAutomovel(){
         }
 
         setMensagem("Automóvel cadastrado com sucesso!");
-
+         
         setMarca("");
         setModelo("");
         setAno("");
         setCor("");
         setPreco("");
         setQuilometragem("");
+        atualizarLista(); 
 
     } catch (error) {
 
@@ -62,7 +63,7 @@ function FormularioAutomovel(){
     } finally {
 
         setCarregando(false);
-
+          
     };
 
 }
