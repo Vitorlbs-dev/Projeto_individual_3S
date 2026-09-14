@@ -52,20 +52,24 @@ function ListaAutomoveis({atualizarLista}) {
             {automoveis.length === 0 ? (
                 <p>Nenhum automóvel cadastrado.</p>
             ) : (
-                automoveis.map((automovel) => (
-                    <div className={styles.card} key={automovel.id}>
+                <div className={styles.cards}>
 
-                        <h3>
-                            {automovel.marca} {automovel.modelo}
-                        </h3>
+            {automoveis.map((automovel) => (
+                <div className={styles.card} key={automovel.id}>
 
-                        <p>Ano: {automovel.ano}</p>
-                        <p>Cor: {automovel.cor}</p>
-                        <p>Preço: R$ {automovel.preco}</p>
-                        <p>Quilometragem: {automovel.quilometragem} km</p>
+                    <h3>
+                        {automovel.marca} {automovel.modelo}
+                    </h3>
 
-                    </div>
-                ))
+                    <p>Ano: {automovel.ano}</p>
+                    <p>Cor: {automovel.cor}</p>
+                    <p>Preço: R$ {automovel.preco}</p>
+                    <p>Quilometragem: {automovel.quilometragem} km</p>
+
+                </div>
+            ))}
+
+        </div>
             )}
 
         </div>
